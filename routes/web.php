@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Home;
+use App\Http\Livewire\AcceptedOffers;
+use App\Http\Livewire\WonOffers;
+use App\Http\Livewire\Account;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +18,9 @@ use App\Http\Livewire\Home;
 */
 
 Route::get('/', Home::class);
+Route::get('accepted-offers', AcceptedOffers::class);
+Route::get('won-offers', WonOffers::class);
+Route::get('account', Account::class);
 
 Route::middleware([
     'auth:sanctum',

@@ -1,5 +1,5 @@
 <div class="bg-white absolute bottom-0 w-full border-t border-gray-200 flex">
-    <a href="#" class="flex flex-grow items-center justify-center p-2 text-blue-500 hover:text-blue-500">
+    <a href="{{ url('/') }}" class="flex flex-grow items-center justify-center p-2 {{ request()->is('/') ? 'text-blue-500' : 'text-gray-500' }}  hover:text-blue-500">
         <div class="text-center">
             <div class="flex justify-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -9,7 +9,7 @@
             <span class="block text-xs leading-none">Current Offers</span>
         </div>
     </a>
-    <a href="#" class="flex flex-grow items-center justify-center p-2 text-gray-500 hover:text-blue-500">
+    <a href="{{ url('accepted-offers') }}" class="flex flex-grow items-center justify-center p-2 {{ request()->is('accepted-offers') ? 'text-blue-500' : 'text-gray-500' }} hover:text-blue-500">
         <div class="text-center">
             <div class="flex justify-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -19,7 +19,7 @@
             <span class="block text-xs leading-none">Accepted Offers</span>
         </div>
     </a>
-    <a href="#" class="flex flex-grow items-center justify-center p-2 text-gray-500 hover:text-blue-500">
+    <a href="{{ url('won-offers') }}" class="flex flex-grow items-center justify-center p-2 {{ request()->is('won-offers') ? 'text-blue-500' : 'text-gray-500' }} hover:text-blue-500">
         <div class="text-center">
             <div class="flex justify-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -29,7 +29,7 @@
             <span class="block text-xs leading-none">Won Offers</span>
         </div>
     </a>
-    <a href="#" class="flex flex-grow items-center justify-center p-2 text-gray-500 hover:text-blue-500">
+    <a href="{{ url('account') }}" class="flex flex-grow items-center justify-center p-2 {{ request()->is('account') ? 'text-blue-500' : 'text-gray-500' }} hover:text-blue-500">
         <div class="text-center">
             <div class="flex justify-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
